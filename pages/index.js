@@ -1,16 +1,18 @@
 import axios from "axios";
 import React from "react";
+import HomeHeader from "../components/HomeHeader";
+import HomeLatestPosts from "../components/HomeLatestPosts";
 
 export default function Home({ posts }) {
   return (
     <div>
-      <h1>{posts[0].attributes.title}</h1>
-      <h1>{posts[1].attributes.title}</h1>
+      <HomeHeader/>
+      <HomeLatestPosts posts={posts}/>
     </div>
   );
 }
-
-export async function getStaticProps() {
+export async function getServerSideProps() {
+// export async function getStaticProps() {
   const postsRes = await axios.get("http://localhost:1337/api/posts");
 
   return {
@@ -19,3 +21,4 @@ export async function getStaticProps() {
     },
   };
 }
+

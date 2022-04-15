@@ -1,15 +1,20 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 export default function NavBar() {
   return (
-      <nav>
-          <a>Devistry</a>
-          <ul>
-              <li>
-                  <a>All posts</a>
-              </li>
-          </ul>
-      </nav>
-    
-  )
+    <nav className="navBar">
+      <div className="container">
+        <Link href="/">
+          <a className="title">Devistry</a>
+        </Link>
+        <ul>
+          <li>
+            <Link href="/posts">
+                <a className="">All posts</a></Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
