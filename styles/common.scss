@@ -6,7 +6,13 @@ body {
 * {
     box-sizing: border-box;
 }
-
+a {
+    color: inherit;
+    text-decoration: unset;
+    &:hover {
+        text-decoration: unset;
+    }
+}
 .container {
     padding: 0 1em;
     margin: 0 auto;

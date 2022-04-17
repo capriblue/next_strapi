@@ -5,7 +5,7 @@ export default function HomeHeader() {
     <div>
         <h1>Devistry blog</h1>
         <p>
-            Loremsfa;dfalkfdja;sdf sdfl;skfjas;dlkfaj.
+           lorem, ipsum dolor sit ...
         </p>
     </div>
   )
