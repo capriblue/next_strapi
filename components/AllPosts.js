@@ -5,7 +5,7 @@ export default function AllPosts({ posts }) {
 
     function renderPostPreviews() {
         return posts.map((post) => {
-            return <PostPreview post={post.attributes} key={post.id}/>
+            return <PostPreview post={post.attributes} key={post.id} id={post.id}  />
         })
     }
   return (

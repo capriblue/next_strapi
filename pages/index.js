@@ -3,7 +3,7 @@ import React from "react";
 import HomeHeader from "../components/HomeHeader";
 import HomeLatestPosts from "../components/HomeLatestPosts";
 
-export default function Home({ posts }) {
+export default function Home({ posts, isdev }) {
   return (
     <div>
       <HomeHeader/>

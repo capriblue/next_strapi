@@ -8,13 +8,13 @@ export default function HomeLatestPosts({ posts }) {
     }, [posts]);
     function renderPostPreviews() {
         return latestPosts.map((post) => {
-            return <PostPreview post={post.attributes} key={post.id}/>
+            return <PostPreview post={post.attributes} key={post.id} id={post.id} />
         })
     }
   return (
       <>
       <h2> home latest posts</h2>
-      {renderPostPreviews()}
+      {renderPostPreviews()}1:21:11
       </>
     )
 }
